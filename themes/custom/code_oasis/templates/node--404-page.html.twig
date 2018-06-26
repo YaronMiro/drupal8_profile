@@ -70,7 +70,7 @@
  *   in different view modes.
  */
 #}
-{%
+{# {%
   set classes = [
     'node',
     'node--type-' ~ node.bundle|clean_class,
@@ -81,7 +81,6 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<h3>This is the article full view mode</h3>
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -91,6 +90,8 @@
     </h2>
   {% endif %}
   {{ title_suffix }}
+
+
 
   {% if display_submitted %}
     <footer class="node__meta">
@@ -105,4 +106,5 @@
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content }}
   </div>
-</article>
+  {{ 'Yaron Miro' }}
+</article> #}

@@ -2,6 +2,4 @@
 
 function code_oasis_preprocess_node(&$variables){
 
-  // $test = dump($variables['label']);
-  // dump($test['#bundle']);
 }
